@@ -43,6 +43,7 @@ main .hero .slides-wrapper {
   height: calc(100vh - var(--nav-height));
   overflow: hidden;
 }
+
 main .hero .slides-wrapper .slides {
   position: relative;
   height: 100%;
@@ -55,6 +56,7 @@ main .hero .slides-wrapper .slides .slide {
   visibility: hidden;
   transition: opacity 0.5s ease-in-out;
 }
+
 main .hero .slides-wrapper .slides .slide.active {
   opacity: 1;
   visibility: visible;
@@ -92,6 +94,7 @@ main .hero .slides-control {
   padding: 1em;
   z-index: 2;
 }
+
 main .hero .slides-control button {
   all: unset;
   border: 1px solid white;
@@ -111,10 +114,11 @@ main .hero .content {
   color: white;
   padding-block: 120px;
 }
+
 main .hero h1 {
   margin: 0;
   padding: 0;
-  font-family: Portrait;
+  font-family: Portrait, sans-serif;
   font-size: 160px;
   line-height: 140px;
   font-weight: 500;

@@ -5,5 +5,6 @@
  */
 
 export default async function decorate(block) {
-  console.log(block);
+  const noop = (b) => b;
+  noop(block);
 }

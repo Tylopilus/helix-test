@@ -15,7 +15,6 @@ function html(strings, ...values) {
 
 export default async function hero(block) {
   const blockCpy = block.cloneNode(true);
-  console.log(blockCpy);
   const title = block.querySelector('h1');
   const slides = [...blockCpy.children].slice(0, -1);
 
@@ -84,5 +83,4 @@ export default async function hero(block) {
 
   block.textContent = '';
   block.appendChild(div);
-  console.log(block);
 }

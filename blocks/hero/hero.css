@@ -40,7 +40,7 @@ main .hero img {
 
 main .hero .slides-wrapper {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - var(--nav-height));
   overflow: hidden;
 }
 main .hero .slides-wrapper .slides {
@@ -52,10 +52,12 @@ main .hero .slides-wrapper .slides {
 
 main .hero .slides-wrapper .slides .slide {
   opacity: 0;
+  visibility: hidden;
   transition: opacity 0.5s ease-in-out;
 }
 main .hero .slides-wrapper .slides .slide.active {
   opacity: 1;
+  visibility: visible;
 }
 
 main .hero .slides-wrapper .slides .slide div:first-child {

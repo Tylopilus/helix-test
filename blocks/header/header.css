@@ -1,7 +1,7 @@
 /* header and nav layout */
 .header-wrapper {
-  position: absolute;
-  top: 0;
+  /* position: absolute;
+  top: 0; */
 }
 header .nav-wrapper {
   background-color: var(--background-color);

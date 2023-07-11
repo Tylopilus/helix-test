@@ -70,14 +70,16 @@ export default async function hero(block) {
   }
 
   slidesControl?.addEventListener('click', (e) => {
-    const btn = e.target.closest('button');
+    const { target } = e;
+    if (!(target instanceof HTMLElement)) return;
+    const btn = target.closest('button');
     if (!btn) return;
-    const idx = btn.dataset.slide;
-    const activeSlide = slidesDiv.querySelector('.active');
+    const idx = btn.dataset.slide ?? 0;
+    const activeSlide = slidesDiv?.querySelector('.active');
     const activeBtn = slidesControl.querySelector('.active');
     activeSlide?.classList.remove('active');
     activeBtn?.classList.remove('active');
-    slidesDiv.children[idx]?.classList.add('active');
+    slidesDiv?.children[idx]?.classList.add('active');
     btn.classList.add('active');
   });
 

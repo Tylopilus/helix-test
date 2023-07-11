@@ -1,1 +1,9 @@
 /* below the fold CSS goes here */
+
+@font-face {
+  font-family: 'Portrait';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/styles/fonts/PortraitInline-Sans.otf') format('opentype');
+}

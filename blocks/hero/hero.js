@@ -45,6 +45,7 @@ export default async function hero(block) {
       ytEmbed.classList.add('yt-embed');
       ytEmbed.innerHTML = html`
         <iframe
+          loading="lazy"
           width="560"
           height="315"
           src="https://www.youtube.com/embed/${maybeYTLink.href
